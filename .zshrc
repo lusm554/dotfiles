@@ -1,5 +1,4 @@
-#export PS1="%n@%m:%~$ "
-export PS1="%m:%F{green}%~%f%F{%(0?.white.red)}$%f "
+export PS1="%m:%F{green}%(4~|.../%3~|%~)%f%F{%(0?.white.red)}$%f "
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
