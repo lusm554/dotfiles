@@ -14,5 +14,5 @@ comp () {
   name=$(echo "$1" | cut -f 1 -d '.')
 
   g++ $1 -o "$name.out" && ./$_ 
-  rm "$name.out"
+  rm "`/bin/pwd`/$name.out"
 }
