@@ -13,6 +13,11 @@ rmd () {
 comp () {
   name=$(echo "$1" | cut -f 1 -d '.')
 
-  g++ $1 -o "$name.out" && ./$_ 
+  #g++ -std=c++11 $1 -o "$name.out" && ./$_ 
+  g++ $1 -o "$name.out" && ./$_
   rm "`/bin/pwd`/$name.out"
+}
+
+smth () {
+  env LC_ALL=C tr -c -d '/\' < /dev/random
 }
