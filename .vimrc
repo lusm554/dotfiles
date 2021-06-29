@@ -7,3 +7,12 @@ set et
 set number
 
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+
+autocmd FileType python set softtabstop=4
+autocmd FileType python set tabstop=4
+autocmd FileType python set autoindent
+autocmd FileType python set expandtab
+autocmd FileType python set textwidth=80
+autocmd FileType python set smartindent
+autocmd FileType python set shiftwidth=4
+filetype plugin indent on
