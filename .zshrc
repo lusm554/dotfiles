@@ -1,5 +1,5 @@
 export PS1="%m:%F{green}%(4~|.../%3~|%~)%f%F{%(0?.white.red)}$%f "
-
+export TERM=screen-256color
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -21,3 +21,5 @@ comp () {
 smth () {
   env LC_ALL=C tr -c -d '/\' < /dev/random
 }
+
+alias tmux="TERM=screen-256color-bce tmux"
