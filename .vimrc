@@ -1,5 +1,6 @@
 syntax on
-colorscheme default
+colorscheme wombat256mod 
+"colorscheme default
 let g:sql_type_default = 'pgsql'
 set backspace=indent,eol,start
 set ts=2
