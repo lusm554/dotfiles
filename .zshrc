@@ -1,3 +1,4 @@
+# BASH prompt
 export PS1="%m:%F{green}%(4~|.../%3~|%~)%f%F{%(0?.white.red)}$%f "
 export TERM=screen-256color
 export NVM_DIR="$HOME/.nvm"
@@ -22,5 +23,12 @@ smth () {
   env LC_ALL=C tr -c -d '/\' < /dev/random
 }
 
+# Tmux
 alias tmux="TERM=screen-256color-bce tmux"
+
+# Aliases
 alias ll="ls -a -l -F"
+
+# ls color
+export CLICOLOR=1
+export LSCOLORS=exfxcxdxbxegedabagacad
