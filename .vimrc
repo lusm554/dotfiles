@@ -28,6 +28,11 @@ autocmd FileType c set shiftwidth=2
 autocmd FileType c set expandtab
 autocmd FileType c set smartindent " C-intelligent indenting
 
+" CPP
+autocmd FileType cpp set shiftwidth=2
+autocmd FileType cpp set expandtab
+autocmd FileType cpp set smartindent " C-intelligent indenting
+
 " Verilog
 autocmd FileType *.v set ai " always set autoindenting on
 autocmd FileType *.v set smartindent " C-intelligent indenting
