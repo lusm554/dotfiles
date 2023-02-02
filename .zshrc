@@ -1,5 +1,5 @@
 # BASH prompt
-export PS1="%m:%F{green}%(4~|.../%3~|%~)%f%F{%(0?.white.red)}$%f "
+export PS1="%n@%m:%F{green}%(4~|.../%3~|%~)%f%F{%(0?.white.red)}$%f "
 export TERM=screen-256color
 
 # Tmux
@@ -23,3 +23,12 @@ function wman {
 		then open x-man-page://$1/$2 ;
 	fi
 }
+
+# compile for book C++ Promer 5th 2013
+function cpp11 {
+  g++ -std=c++11 $@
+}
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
