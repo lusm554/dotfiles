@@ -16,12 +16,9 @@ autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 " Python3
 autocmd FileType python set softtabstop=4
 autocmd FileType python set tabstop=4
-autocmd FileType python set autoindent
-autocmd FileType python set expandtab
-autocmd FileType python set textwidth=80
-autocmd FileType python set smartindent
 autocmd FileType python set shiftwidth=4
-filetype plugin indent on
+autocmd FileType python set expandtab
+autocmd FileType python set autoindent
 
 " C
 autocmd FileType c set shiftwidth=2
@@ -43,3 +40,9 @@ autocmd FileType *.v set set tabstop=8 " Tab width is 8
 autocmd FileType sql set shiftwidth=2
 autocmd FileType sql set expandtab
 autocmd FileType sql set smartindent " C-intelligent indenting
+
+
+" Scheme
+autocmd FileType scheme set shiftwidth=2
+autocmd FileType scheme set expandtab
+autocmd FileType scheme set smartindent " C-intelligent indenting
