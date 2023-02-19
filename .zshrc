@@ -24,6 +24,10 @@ function wman {
 	fi
 }
 
+function code {
+  open -a "visual studio code" $@
+}
+
 # compile for book C++ Promer 5th 2013
 function cpp11 {
   g++ -std=c++11 $@
@@ -32,3 +36,10 @@ function cpp11 {
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# The next line updates PATH for Yandex Cloud CLI.
+if [ -f '/Users/lusm/yandex-cloud/path.bash.inc' ]; then source '/Users/lusm/yandex-cloud/path.bash.inc'; fi
+
+# The next line enables shell command completion for yc.
+if [ -f '/Users/lusm/yandex-cloud/completion.zsh.inc' ]; then source '/Users/lusm/yandex-cloud/completion.zsh.inc'; fi
+
