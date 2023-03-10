@@ -14,11 +14,7 @@ highlight Comment ctermfg=119
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 
 " Python3
-autocmd FileType python set softtabstop=4
-autocmd FileType python set tabstop=4
-autocmd FileType python set shiftwidth=4
-autocmd FileType python set expandtab
-autocmd FileType python set autoindent
+autocmd FileType python set autoindent expandtab tabstop=2 shiftwidth=2
 
 " C
 autocmd FileType c set shiftwidth=2
