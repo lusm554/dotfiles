@@ -16,6 +16,9 @@ autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 " Python3
 autocmd FileType python set autoindent expandtab tabstop=2 shiftwidth=2
 
+" JS
+autocmd FileType javascript set autoindent expandtab tabstop=2 shiftwidth=2
+
 " C
 autocmd FileType c set shiftwidth=2
 autocmd FileType c set expandtab
@@ -33,9 +36,10 @@ autocmd FileType *.v set sw=4 " shiftwidth (indent)
 autocmd FileType *.v set set tabstop=8 " Tab width is 8 
 
 " SQL
-autocmd FileType sql set shiftwidth=2
-autocmd FileType sql set expandtab
-autocmd FileType sql set smartindent " C-intelligent indenting
+autocmd FileType sql set autoindent expandtab tabstop=2 shiftwidth=2
+"autocmd FileType sql set shiftwidth=2
+"autocmd FileType sql set expandtab
+"autocmd FileType sql set smartindent " C-intelligent indenting
 
 
 " Scheme
